@@ -101,7 +101,12 @@ public class DoctorController{
         return doctors;
     }
 
+@CrossOrigin()
+    @GetMapping("running")
+    public String running() {
 
+        return "doctors";
+    }
 
 
 
